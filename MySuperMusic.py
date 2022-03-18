@@ -34,7 +34,7 @@ def starting(message):
 @bot.message_handler()
 def sonmg(message):
   song_name = message.text
-    bot.send_message(message.chat.id, 'Hi '+username+', the song \"'+song_name+'\" is on its way...')
+    bot.send_message(message.chat.id, f"Hi there, the song {song_name} is on its way...")
 
     query = urllib.quote(song_name+ "song")
     url = "https://www.youtube.com/results?search_query=" + query
