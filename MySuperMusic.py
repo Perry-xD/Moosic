@@ -2,7 +2,7 @@ import json
 import os
 try:
   import telebot
-else:
+except:
   os.system("pip install pytelegrambotapi")
 from telebot import TeleBot
 import time
@@ -11,13 +11,13 @@ import urllib2
 
 try:
   from bs4 import BeautifulSoup
-else:
+except:
   os.system("pip install beautifulsoup4")
 from bs4 import BeautifulSoup
 
 try:
   from slugify import slugify
-else:
+except:
   os.system("pip install slugify")
 
 TOKEN = os.environ.get("BOT_TOKEN")
